@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{background-color: #171717}
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    
+    margin: 50px 50px;
+    background-color: #151515 ;
+    border-right: 0;
+}
+
+.box>div{
+    width: 120px;
+    height: 100vh;
+    opacity: .3;
+    float: left;
+}
+
+.box>div:hover{
+
+    opacity: 1;
+   
+}
+.box>div h1{
+    color: #fff;
+    font-size: 30px;
+    padding: 50px 50px;
+    
+}
+#returnButt{
+width: 30px;
+height: 30px;
+position: absolute;
+right: 30px;
+background-color: #fff;
+}

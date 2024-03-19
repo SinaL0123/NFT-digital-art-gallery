@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/internal.css" />
+    <title>Art Gallery ⅠⅠⅠ</title>
+    <style>
+        .box>div{
+            background:url("../img/art1/1.gif") no-repeat center center;transition:all .7s ease 0s;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html"><div id="returnButt"></div></a>
+    
+    <div class="box">
+        <div style="background-image: url('../img/art3/1.GIF');"><h1>1</h1></div>
+        <div style="background-image: url('../img/art3/2.GIF');"><h1>2</h1></div>
+        <div style="background-image: url('../img/art3/3.GIF');"><h1>3</h1></div>
+        <div style="background-image: url('../img/art3/4.GIF');"><h1>4</h1></div>
+        <div style="background-image: url('../img/art3/5.GIF');"><h1>5</h1></div>
+        <div style="background-image: url('../img/art3/6.GIF');"><h1>6</h1></div>
+        <div style="background-image: url('../img/art3/7.GIF');"><h1>7</h1></div>
+        <div style="background-image: url('../img/art3/8.GIF');"><h1>8</h1></div>
+    </div>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script>
+
+    $(".box>div").mouseover(function(){
+        $(this).stop().animate({
+            "width":"500px"
+        },200).siblings().stop().animate({
+            "width":"120px"
+        },200)
+    })
+
+    $(".box>div").mouseout(function(){
+        $(".box>div").stop().animate({
+            "width":"165px"
+        },200)
+    })
+
+</script>
+
+</body>
+</html>
